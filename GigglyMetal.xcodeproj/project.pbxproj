@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		AA19AA451BF4C59100A7EF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19AA441BF4C59100A7EF19 /* AppDelegate.swift */; };
-		AA19AA471BF4C59100A7EF19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19AA461BF4C59100A7EF19 /* ViewController.swift */; };
 		AA19AA4A1BF4C59100A7EF19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA19AA481BF4C59100A7EF19 /* Main.storyboard */; };
 		AA19AA4C1BF4C59100A7EF19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA19AA4B1BF4C59100A7EF19 /* Assets.xcassets */; };
 		AA19AA4F1BF4C59100A7EF19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA19AA4D1BF4C59100A7EF19 /* LaunchScreen.storyboard */; };
+		AA19AA591BF4C5BA00A7EF19 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19AA581BF4C5BA00A7EF19 /* HomeViewController.swift */; };
+		AA19AA5C1BF4C75800A7EF19 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA19AA5B1BF4C75800A7EF19 /* Metal.framework */; };
+		AA19AA5E1BF4C76600A7EF19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA19AA5D1BF4C76600A7EF19 /* QuartzCore.framework */; };
+		AA19AA611BF4DA0600A7EF19 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = AA19AA601BF4DA0600A7EF19 /* Shader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA19AA411BF4C59100A7EF19 /* GigglyMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GigglyMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA19AA441BF4C59100A7EF19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA19AA461BF4C59100A7EF19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA19AA491BF4C59100A7EF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA19AA4B1BF4C59100A7EF19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA19AA4E1BF4C59100A7EF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA19AA501BF4C59100A7EF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA19AA581BF4C5BA00A7EF19 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AA19AA5B1BF4C75800A7EF19 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		AA19AA5D1BF4C76600A7EF19 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AA19AA601BF4DA0600A7EF19 /* Shader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA19AA5E1BF4C76600A7EF19 /* QuartzCore.framework in Frameworks */,
+				AA19AA5C1BF4C75800A7EF19 /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +46,7 @@
 		AA19AA381BF4C59100A7EF19 = {
 			isa = PBXGroup;
 			children = (
+				AA19AA5A1BF4C72D00A7EF19 /* Frameworks */,
 				AA19AA431BF4C59100A7EF19 /* GigglyMetal */,
 				AA19AA421BF4C59100A7EF19 /* Products */,
 			);
@@ -54,14 +63,48 @@
 		AA19AA431BF4C59100A7EF19 /* GigglyMetal */ = {
 			isa = PBXGroup;
 			children = (
+				AA19AA5F1BF4D9F700A7EF19 /* Metal */,
+				AA19AA561BF4C59C00A7EF19 /* ViewControllers */,
 				AA19AA441BF4C59100A7EF19 /* AppDelegate.swift */,
-				AA19AA461BF4C59100A7EF19 /* ViewController.swift */,
 				AA19AA481BF4C59100A7EF19 /* Main.storyboard */,
 				AA19AA4B1BF4C59100A7EF19 /* Assets.xcassets */,
 				AA19AA4D1BF4C59100A7EF19 /* LaunchScreen.storyboard */,
 				AA19AA501BF4C59100A7EF19 /* Info.plist */,
 			);
 			path = GigglyMetal;
+			sourceTree = "<group>";
+		};
+		AA19AA561BF4C59C00A7EF19 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA19AA571BF4C5A500A7EF19 /* HomeViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AA19AA571BF4C5A500A7EF19 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA19AA581BF4C5BA00A7EF19 /* HomeViewController.swift */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		AA19AA5A1BF4C72D00A7EF19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA19AA5D1BF4C76600A7EF19 /* QuartzCore.framework */,
+				AA19AA5B1BF4C75800A7EF19 /* Metal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA19AA5F1BF4D9F700A7EF19 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				AA19AA601BF4DA0600A7EF19 /* Shader.metal */,
+			);
+			name = Metal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA19AA471BF4C59100A7EF19 /* ViewController.swift in Sources */,
+				AA19AA611BF4DA0600A7EF19 /* Shader.metal in Sources */,
 				AA19AA451BF4C59100A7EF19 /* AppDelegate.swift in Sources */,
+				AA19AA591BF4C5BA00A7EF19 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GigglyMetal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaboomlab.GigglyMetal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -261,6 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GigglyMetal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaboomlab.GigglyMetal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
