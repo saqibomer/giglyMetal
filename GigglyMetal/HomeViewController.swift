@@ -34,8 +34,7 @@ class HomeViewController: UIViewController {
         
         var timer: CADisplayLink? //For Redraw
         
-        
-        
+                
         if let mLayer = metalLayer {
             view.layer.addSublayer(mLayer)// Add Metal Layer
         }
